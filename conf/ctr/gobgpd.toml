@@ -1,0 +1,22 @@
+[global.config]
+	as = 65000
+	router-id = "198.18.0.1"
+
+[[neighbors]]
+  [neighbors.config]
+	  neighbor-address = "198.18.0.2"
+	  peer-as = 65000
+  [neighbors.route-reflector.config]
+	route-reflector-client = true
+	route-reflector-cluster-id = "198.18.0.1"
+
+[[neighbors]]
+  [neighbors.config]
+	  neighbor-address = "198.18.0.3"
+	  peer-as = 65000
+  [neighbors.route-reflector.config]
+	route-reflector-client = true
+	route-reflector-cluster-id = "198.18.0.1"
+
+
+
